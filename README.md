@@ -60,7 +60,7 @@ A partir de uma base de dados de vendas, foi realizado um processo completo de t
    ```
    jupyter notebook
    ```
-4. Abra o arquivo `analise_vendas.ipynb`
+4. Abra o arquivo `pandas_supremo.ipynb`
 
 ---
 
