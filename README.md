@@ -1,105 +1,69 @@
-📊 Análise de Vendas - Tech
+# 📊 Análise de Vendas - Tech
 
-📌 Sobre o Projeto
+## 📌 Sobre o projeto
 
-Este projeto tem como objetivo realizar uma análise exploratória e tratamento de dados de vendas de uma empresa do setor de tecnologia.
+Este projeto tem como objetivo analisar dados de vendas de uma empresa do setor de tecnologia.
 
-A base de dados foi tratada, enriquecida e analisada com foco em gerar insights relevantes sobre faturamento, desempenho por loja, produtos mais vendidos e análise de metas.
+A partir de uma base de dados de vendas, foi realizado um processo completo de tratamento, padronização e enriquecimento dos dados, seguido de análises exploratórias utilizando Python para geração de insights de negócio.
 
+---
 
-🛠️ Tecnologias utilizadas
+## 🛠️ Tecnologias utilizadas
 
-- Python
-- Pandas
-- NumPy
+* Python
+* Pandas
+* Numpy
+* Jupyter Notebook
 
+---
 
-📂 Base de Dados
+## 📂 Estrutura do projeto
 
-O projeto utiliza duas bases:
-- vendas_tech.csv → Contém os dados de vendas
-- gerentes_lojas.xlsx → Contém informações dos gerentes e metas
+* `vendas_tech.csv`: Base de dados com informações de vendas
+* `gerentes_lojas.xlsx`: Dados de gerentes e metas por loja
+* `analise_vendas.ipynb`: Notebook com todo o processo de tratamento e análise dos dados
 
+---
 
-🔍 Etapas do Projeto
+## 📊 Análises realizadas
 
-1. Importação e inspeção dos dados
-- Leitura dos arquivos CSV e Excel
-- Análise inicial com:
-   .info()
-   .describe()
-   .head() / .tail()
+* Tratamento e limpeza de dados (nulos, duplicados e padronização)
+* Criação de métricas (faturamento, forma de venda, região)
+* Ranking de faturamento por loja
+* Produtos mais vendidos no canal online
+* Análise cruzada entre lojas e produtos
+* Verificação de metas por gerente
+* Evolução de vendas ao longo do tempo
 
-2. Tratamento de dados
-- Remoção de colunas desnecessárias
-- Tratamento de valores nulos
-- Conversão de tipos (datas)
-- Padronização de textos (nomes de lojas)
-- Remoção de duplicatas
+---
 
-3. Criação de novas colunas
-- Faturamento → Preço * Quantidade
-- Forma de Venda → Online ou Presencial
-- Região → Classificação por localização das lojas
+## 💡 Principais insights
 
-4. Análises realizadas
+* Diferença clara entre performance de vendas online e presencial
+* Identificação das lojas com maior geração de receita
+* Produtos com maior volume de vendas no canal digital
+* Regiões com maior concentração de faturamento
+* Análise de atingimento de metas por gerente
 
-📈 Ranking de faturamento por loja
-Identifica quais lojas geram mais receita.
-🛒 Produtos mais vendidos (Online)
-Mostra os produtos com maior volume de vendas no canal online.
+---
 
-🏬 Análise cruzada
-- Produtos mais vendidos por loja
-- Lojas que mais vendem cada produto
+## 🚀 Como executar
 
-🎯 Análise de metas
-Verificação de quais gerentes bateram a meta em janeiro de 2023.
+1. Clone o repositório
+2. Instale as dependências:
 
-📅 Evolução de vendas ao longo do tempo
-- Agrupamento por mês
-- Visualização da tendência de faturamento
+   ```
+   pip install pandas numpy jupyter
+   ```
+3. Execute o Jupyter Notebook:
 
+   ```
+   jupyter notebook
+   ```
+4. Abra o arquivo `analise_vendas.ipynb`
 
-📤 Exportações
+---
 
-Foram gerados arquivos com dados filtrados:
-
-- Vendas SP.csv → Vendas da loja de São Paulo
-- Vendas 2024.csv → Vendas do ano de 2024
-
-
-💡 Principais Insights (exemplo)
-
-- Diferença de desempenho entre lojas físicas e online
-- Identificação de regiões mais lucrativas
-- Produtos com maior volume de vendas
-- Acompanhamento de metas por gerente
-
-
-🚀 Possíveis melhorias futuras
-- Criação de dashboards no Power BI
-- Análises preditivas (forecast de vendas)
-- Segmentação de clientes
-- KPIs mais avançados
-
-
-📎 Como executar o projeto
-# Clone o repositório
-- git clone https://github.com/Gusouzd/analise-vendas-tech.git
-
-# Instale as dependências
-- pip install pandas numpy
-
-# Abra o Jupyter Notebook
-- jupyter notebook
-- Em seguida abra o arquivo "pandas_supremo.ipynb"
+## 📎 Autor
 
 Gustavo Rafael
-📍 São Paulo - SP
-📧 gurafael@hotmail.com.br
-🔗 https://www.linkedin.com/in/gustavorafael09
-
-⭐ Observação
-
-Este é um projeto de portfólio com foco em demonstrar habilidades em análise e tratamento de dados utilizando Python.
